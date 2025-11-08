@@ -1,0 +1,31 @@
+This document describes my current understanding of some security concepts.
+
+Here, i role Play as a junior Sec analyst, explaining how cybercorp should implements these security concept into their organisation. 
+
+
+AAA FRAMEWORK
+Acronym for Authentication Authorization & Accounting, It is a framework used as a whole to stregthen a network. Three pillars which can be easily identified from the acronym all work in complement. 
+
+Authentication: As the name implies it involves verification of users in different ways, taking new employees of cybercorp; authetication process might simply involve the use of username, passwords, 2FA, during login. it can involve other ways of authetication by using digital signatures, Certificate authority etc.
+
+Authorization: It defines access to resources, what resources does the employee have access to, what authority does he have, can he only access the dashboard, do he have admin rights, does he have access to resources in his department only, lets say Security department.
+
+Accounting: This defines monitoring, checking and scanning log info, what the employee did since ganing access into the network.
+
+
+ZERO TRUST 
+Basically Never Trust, always Verify. as the name implies theres basically zero trust within the network, which means even if youve accessed the network, therell be constant re-authentication to verify if its really you, or when one tries to move to a higher level of the network there is need for more authetication. Now lets take Cybercorp Trusted internal network, how trusted might it be would be the question, was micro segmentation applied, where different departments are only allowed resources to their specific department, use of Policy Decision/Enforcement point; where admins input network/traffic policies to allow only valid users into the network etc.
+
+GAP ANALYSIS
+This explains the difference between ones current state and target state, identifying the differences between them, making deep analysis on the gap and profering a solution or bridge.
+Lets take cybercorp, which Current state is basic username/passwords and target state of full AAA + zero trust, identifyng the key gaps.
+-using simple username/password as compared to a username/passwords setup with 2fa authetication (authenticator apps), or one with certificate authority.
+-flat network compared to one segmented into  different department with different accesses/resources.
+-absence of firewalls which would act as a proxy PEP/PDP.
+
+
+NON-REPUDIATION
+A concept that combines proof of origin with proof of integrity. 
+With the use of digital signatures it is easy to trace the origin of a file, it prevents employees from denying the sent sensitive file,  because in the process of signing a digital signature, it involves the use of both private and public keys, as such when messages are sent it hard to deny they are sent from you especially since you already signed and encrypted the hash with your private key, which can be decrypted with your public key.
+
+
