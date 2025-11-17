@@ -1,0 +1,8 @@
+okay1_15-11-2024.log
+okay2_15-11-2024.log
+okay3_15-11-20244.log
+customer1.txt
+customer2.txt
+customer3.txt
+customer4.txt
+customer5.txt
